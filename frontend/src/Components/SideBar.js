@@ -1,13 +1,12 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import IconButton from "@mui/material/IconButton";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
@@ -28,7 +27,7 @@ export default function SideBar() {
       return;
     }
 
-    setState({ "left": open });
+    setState({ left: open });
   };
 
   const list = () => (
@@ -94,16 +93,18 @@ export default function SideBar() {
 
   return (
     <div>
-      <Button onClick={toggleDrawer("left", true)}>
-        <IconButton
-          size="large"
-          edge="start"
-          aria-label="open drawer"
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon fontSize="tiny" />
-        </IconButton>
-      </Button>
+      <IconButton
+        size="large"
+        // edge="start"
+        aria-label="open drawer"
+        sx={{ mr: 2 }}
+      >
+        <MenuOutlinedIcon
+          fontSize="tiny"
+          onClick={toggleDrawer("left", true)}
+        />
+      </IconButton>
+
       <Drawer
         anchor={"left"}
         open={state["left"]}
