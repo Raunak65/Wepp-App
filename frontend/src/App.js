@@ -12,6 +12,7 @@ import Travel from './Components/Travel';
 import ToysGames from './Components/ToysGames';
 import Footwear from './Components/Footwear';
 import Grocery from './Components/Grocery';
+import CardDisplay from './Components/CardDisplay';
 
 class App extends React.Component {
   render() {
@@ -21,7 +22,7 @@ class App extends React.Component {
           <React.Fragment>
             <div className="App">
               <NavigationBar />
-              {/* <Carousels /> */}
+              <CardDisplay />
               <Switch>
                 <Route exact path="/allproducts" component={AllProducts} />
                 <Route exact path="/books" component={Books} />
