@@ -1,10 +1,25 @@
-import React from 'react'
+import React from 'react';
+import ProductCard from "./ProductCard";
+import Stack from "@mui/material/Stack";
 
 function Books() {
     return (
-        <div>
-            <h1>This is books section.</h1>
-        </div>
+        <Stack direction="row" spacing={2}>
+            <ProductCard
+                alt="Book"
+                src=""
+                description="Hello There"
+                title="Hi"
+                price="$70"
+            />
+            <ProductCard
+                alt="Book"
+                src=""
+                description="Hello There"
+                title="Hi"
+                price="$70"
+            />
+        </Stack>
     )
 }
 
