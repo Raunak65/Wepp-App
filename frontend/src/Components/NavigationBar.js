@@ -8,6 +8,8 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import SideBar from "./SideBar";
 import BottomBar from "./BottomBar";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -68,12 +70,20 @@ export default function NavigationBar() {
                   <SearchIcon />
                 </SearchIconWrapper>
                 <StyledInputBase
-                  placeholder="Search…"
+                  placeholder="Search"
                   inputProps={{ "aria-label": "search" }}
                 />
               </Search>
               <Box sx={{ flexGrow: 1 }} />
-              <Box sx={{ display: { xs: "none", md: "flex" } }}>Logout</Box>
+              <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                <ShoppingCartOutlinedIcon/>
+                Cart
+              </Box>
+              <Box ml={5} />
+              <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                <LogoutOutlinedIcon/>
+                Logout
+              </Box>
             </Toolbar>
           </AppBar>
         </Box>
