@@ -1,15 +1,15 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import AllProducts from './Components/AllProducts';
-import Books from './Components/Books';
-import Electronics from './Components/Electronics';
-import Fashion from './Components/Fashion';
-import Furniture from './Components/Furniture';
-import Travel from './Components/Travel';
-import ToysGames from './Components/ToysGames';
-import Footwear from './Components/Footwear';
-import Grocery from './Components/Grocery';
+import AllProducts from "./Components/BottomBar/AllProducts/AllProducts";
+import Books from "./Components/BottomBar/Books/Books";
+import Electronics from "./Components/BottomBar/Electronics/Electronics";
+import Fashion from "./Components/BottomBar/Fashion/Fashion";
+import Furniture from "./Components/BottomBar/Furniture/Furniture";
+import Travel from "./Components/BottomBar/Travel/Travel";
+import ToysGames from "./Components/BottomBar/Toysgames/ToysGames";
+import Footwear from "./Components/BottomBar/Footwear/Footwear";
+import Grocery from "./Components/BottomBar/Grocery/Grocery";
 import Home from './Components/Home';
 
 class App extends React.Component {
