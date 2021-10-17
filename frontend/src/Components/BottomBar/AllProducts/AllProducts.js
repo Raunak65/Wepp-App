@@ -1,11 +1,13 @@
 import React from 'react';
+import Carousel from './Carousel';
 
 function AllProducts() {
     return (
-        <div>
-            <h1>This is all products</h1>
-        </div>
-    )
+      <div>
+        <Carousel/>
+        <h1>Saket Mani</h1>
+      </div>
+    );
 }
 
-export default AllProducts
+export default AllProducts;

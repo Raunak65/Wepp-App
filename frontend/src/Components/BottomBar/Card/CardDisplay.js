@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "@mui/material/Card";
 import CardData from "./CardData";
 import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
@@ -43,40 +42,40 @@ const products = [
   },
   {
     id: 5,
-    title: "Lizard1",
+    title: "Lizard5",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
-    price: "$40",
+    price: "$140",
   },
   {
     id: 6,
-    title: "Lizard2",
+    title: "Lizard6",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
-    price: "$30",
+    price: "$130",
   },
   {
     id: 7,
-    title: "Lizard3",
+    title: "Lizard7",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
-    price: "$20",
+    price: "$120",
   },
   {
     id: 8,
-    title: "Lizard4",
+    title: "Lizard8",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
-    price: "$10",
-  }
+    price: "$110",
+  },
 ];
 
 const CardDisplay = () => {
@@ -97,4 +96,5 @@ const CardDisplay = () => {
 };
 
 export default CardDisplay;
+
 

@@ -10,7 +10,8 @@ import Travel from "./Components/BottomBar/Travel/Travel";
 import ToysGames from "./Components/BottomBar/Toysgames/ToysGames";
 import Footwear from "./Components/BottomBar/Footwear/Footwear";
 import Grocery from "./Components/BottomBar/Grocery/Grocery";
-import Home from './Components/Home';
+import NavigationBar from "./Components/NavigationBar";
+import Footer from "./Components/Footer";
 
 class App extends React.Component {
   render() {
@@ -19,9 +20,9 @@ class App extends React.Component {
         <BrowserRouter>
           <React.Fragment>
             <div className="App">
-              <Home />
+              <NavigationBar />
               <Switch>
-                <Route exact path="/allproducts" component={AllProducts} />
+                <Route exact path="/" component={AllProducts} />
                 <Route exact path="/books" component={Books} />
                 <Route exact path="/electronics" component={Electronics} />
                 <Route exact path="/fashion" component={Fashion} />
@@ -31,6 +32,7 @@ class App extends React.Component {
                 <Route exact path="/footwear" component={Footwear} />
                 <Route exact path="/travel" component={Travel} />
               </Switch>
+              <Footer/>
             </div>
           </React.Fragment>
         </BrowserRouter>

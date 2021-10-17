@@ -10,7 +10,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const CardData=({product})=>{
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card >
       <CardActionArea>
         <CardMedia
           component="img"

@@ -62,7 +62,7 @@ export default function NavigationBar() {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                MUI
+                Wepp
               </Typography>
               <Box sx={{ flexGrow: 1 }} />
               <Search>
@@ -76,12 +76,12 @@ export default function NavigationBar() {
               </Search>
               <Box sx={{ flexGrow: 1 }} />
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <ShoppingCartOutlinedIcon/>
+                <ShoppingCartOutlinedIcon />
                 Cart
               </Box>
               <Box ml={5} />
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <LogoutOutlinedIcon/>
+                <LogoutOutlinedIcon />
                 Logout
               </Box>
             </Toolbar>

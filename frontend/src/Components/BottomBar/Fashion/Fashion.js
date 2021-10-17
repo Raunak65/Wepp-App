@@ -4,6 +4,8 @@ function Fashion() {
     return (
       <div>
         <h1>This is fashion section.</h1>
+        <h1>This is fashion section.</h1>
+        
       </div>
     );
 }

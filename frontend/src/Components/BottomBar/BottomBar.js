@@ -17,55 +17,55 @@ export default function BottomBar() {
     <div>
       <Nav height="small" justify variant="pills" defaultActiveKey="/home">
         <Nav.Item>
-          <Nav.Link href="/home">
-            <HomeOutlinedIcon fontSize="small" /> 
+          <Nav.Link as={Link} eventKey="allproducts" to="">
+            <HomeOutlinedIcon fontSize="small" />
             All Products
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="books" to="books">
-            <LibraryBooksOutlinedIcon fontSize="small" /> 
+            <LibraryBooksOutlinedIcon fontSize="small" />
             Books
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="electronics" to="electronics">
-            <CameraAltOutlinedIcon fontSize="small" /> 
+            <CameraAltOutlinedIcon fontSize="small" />
             Electronics
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="fashion" to="fashion">
-            <AccessibilityIcon fontSize="small" /> 
+            <AccessibilityIcon fontSize="small" />
             Fashion
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="toysgames" to="toysgames">
-            <GamesOutlinedIcon fontSize = "small" /> Toys & Games
+            <GamesOutlinedIcon fontSize="small" /> Toys & Games
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="grocery" to="grocery">
-            <LocalGroceryStoreOutlinedIcon fontSize="small" /> 
+            <LocalGroceryStoreOutlinedIcon fontSize="small" />
             Grocery
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="furniture" to="furniture">
-            <WeekendOutlinedIcon fontSize="small" /> 
+            <WeekendOutlinedIcon fontSize="small" />
             Furniture
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="footwear" to="footwear">
-            <DirectionsRunIcon fontSize="small" /> 
+            <DirectionsRunIcon fontSize="small" />
             Footwear
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="travel" to="travel">
-            <DirectionsCarFilledOutlinedIcon fontSize="small" /> 
+            <DirectionsCarFilledOutlinedIcon fontSize="small" />
             Travel
           </Nav.Link>
         </Nav.Item>
