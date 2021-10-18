@@ -3,20 +3,24 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
-  MDBCardText,
   MDBCardImage,
   MDBCardLink,
+  MDBCardText,
 } from "mdb-react-ui-kit";
 
 const CardData = ({ product }) => {
   return (
-    <MDBCard style={{ maxWidth: "22rem" }}>
-      <MDBCardImage src={product.image} position="top" alt="..." />
+    <MDBCard className="bg-image hover-zoom shadow-2-strong rounded" style={{marginBottom:'1.5rem'}}>
+      <MDBCardImage
+        height="200rem"
+        src={product.image}
+        position="top"
+        alt="..."
+      />
       <MDBCardBody>
         <MDBCardTitle>{product.title}</MDBCardTitle>
         <MDBCardText>{product.description}</MDBCardText>
-        <MDBCardLink href="#">Add to Cart</MDBCardLink>
-        <MDBCardLink href="#">WishList</MDBCardLink>
+        <MDBCardLink href="#">I would Love to buy</MDBCardLink>
       </MDBCardBody>
     </MDBCard>
   );

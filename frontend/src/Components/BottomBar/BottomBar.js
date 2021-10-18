@@ -1,21 +1,20 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Box from "@mui/material/Box";
-import GamesOutlinedIcon from '@mui/icons-material/GamesOutlined';
-import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
+import GamesOutlinedIcon from "@mui/icons-material/GamesOutlined";
+import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
 import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
 import WeekendOutlinedIcon from "@mui/icons-material/WeekendOutlined";
 import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
 import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 
 export default function BottomBar() {
   return (
     <div>
-      <Nav height="small" justify variant="pills" defaultActiveKey="/home">
+      <Nav height="small" fill variant="pills" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link as={Link} eventKey="allproducts" to="">
             <HomeOutlinedIcon fontSize="small" />
@@ -73,3 +72,61 @@ export default function BottomBar() {
     </div>
   );
 }
+
+// import React, { useState } from "react";
+// import {
+//   MDBTabs,
+//   MDBTabsItem,
+//   MDBTabsLink,
+//   MDBTabsContent,
+//   MDBTabsPane,
+// } from "mdb-react-ui-kit";
+
+// export default function App() {
+//   const [justifyActive, setJustifyActive] = useState("tab1");
+
+//   const handleJustifyClick = (value: string) => {
+//     if (value === justifyActive) {
+//       return;
+//     }
+
+//     setJustifyActive(value);
+//   };
+
+//   return (
+//     <>
+//       <MDBTabs pills justify className="mb-3">
+//         <MDBTabsItem>
+//           <MDBTabsLink
+//             onClick={() => handleJustifyClick("tab1")}
+//             active={justifyActive === "tab1"}
+//           >
+//             All Products
+//           </MDBTabsLink>
+//         </MDBTabsItem>
+//         <MDBTabsItem>
+//           <MDBTabsLink
+//             onClick={() => handleJustifyClick("tab2")}
+//             active={justifyActive === "tab2"}
+//           >
+//             Very very very very long link
+//           </MDBTabsLink>
+//         </MDBTabsItem>
+//         <MDBTabsItem>
+//           <MDBTabsLink
+//             onClick={() => handleJustifyClick("tab3")}
+//             active={justifyActive === "tab3"}
+//           >
+//             Another link
+//           </MDBTabsLink>
+//         </MDBTabsItem>
+//       </MDBTabs>
+
+//       <MDBTabsContent>
+//         <MDBTabsPane show={justifyActive === "tab1"}>Tab 1 content</MDBTabsPane>
+//         <MDBTabsPane show={justifyActive === "tab2"}>Tab 2 content</MDBTabsPane>
+//         <MDBTabsPane show={justifyActive === "tab3"}>Tab 3 content</MDBTabsPane>
+//       </MDBTabsContent>
+//     </>
+//   );
+// }

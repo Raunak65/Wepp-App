@@ -1,103 +1,94 @@
 import React from "react";
 import CardData from "./CardData";
-import Stack from "@mui/material/Stack";
-import Container from "@mui/material/Container";
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 const products = [
   {
     id: 1,
-    title: "Lizard1",
+    title: "Books",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "https://www.incimages.com/uploaded_files/image/1920x1080/getty_598063032_349381.jpg",
     price: "$40",
   },
   {
     id: 2,
-    title: "Lizard2",
+    title: "Electronics",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "http://www.polytechnichub.com/wp-content/uploads/2017/04/Electronic.jpg",
     price: "$30",
   },
   {
     id: 3,
-    title: "Lizard3",
+    title: "Fashion",
     description:
       "Lizards are a  ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2020/01/Webp.net-resizeimage-29-1024x683.jpg",
     price: "$20",
   },
   {
     id: 4,
-    title: "Lizard4",
+    title: "Games & Toys",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "https://www.thehindubusinessline.com/news/yfeu1c/article33980306.ece/ALTERNATES/LANDSCAPE_1200/bl04Funskool",
     price: "$10",
   },
   {
     id: 5,
-    title: "Lizard5",
+    title: "Grocery",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "https://i.pinimg.com/736x/ae/e6/9d/aee69d611baea551d820fa80541dad2f.jpg",
     price: "$140",
   },
   {
     id: 6,
-    title: "Lizard6",
+    title: "Furniture",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
-    image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+    image: "https://www.woodenstreet.com/images/furniture/deal-1.jpg?v1",
     price: "$130",
   },
   {
     id: 7,
-    title: "Lizard7",
+    title: "Footwear",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "https://www.compliancegate.com/wp-content/uploads/2020/01/shoes-footwear-regulations-us.jpg",
     price: "$120",
   },
   {
     id: 8,
-    title: "Lizard8",
+    title: "Travel",
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
-      "https://media.istockphoto.com/photos/taj-majal-at-sunrise-in-agra-india-picture-id1152168512",
+      "https://thumbs.dreamstime.com/b/travel-world-landmarks-background-blue-sky-46083021.jpg",
     price: "$110",
   },
-  
 ];
 
 const CardDisplay = () => {
   return (
-    // <Container sx={{ flexGrow: 1 }}>
-    //   <Stack
-    //     direction={{ xs: "column", sm: "row" }}
-    //     spacing={{ xs: 1, sm: 2, md: 4 }}
-    //   >
-    //     {products.map((product) => (
-    //       <MDBCol item key={product.id} size="md" className="col-example">
-    //       <CardData product={product} />
-    //     </MDBCol>
-    //     ))}
-    //   </Stack>
-    // </Container>
     <MDBContainer>
       <MDBRow>
         {products.map((product) => (
-          <MDBCol item key={product.id} sm='6' md='4' lg='3' className="col-example">
+          <MDBCol
+            item
+            key={product.id}
+            sm="6"
+            md="4"
+            lg="3"
+            className="col-example "
+          >
             <CardData product={product} />
           </MDBCol>
         ))}

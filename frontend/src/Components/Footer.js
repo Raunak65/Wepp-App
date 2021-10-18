@@ -80,8 +80,8 @@ export default function App() {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
         &copy; {new Date().getFullYear()} Copyright:{" "}
-        <a className="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+        <a className="text-white">
+          Wepp
         </a>
       </div>
     </MDBFooter>
