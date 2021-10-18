@@ -10,6 +10,7 @@ import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFi
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
+import { MDBIcon } from "mdb-react-ui-kit";
 
 export default function BottomBar() {
   return (
@@ -17,55 +18,47 @@ export default function BottomBar() {
       <Nav height="small" fill variant="pills" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link as={Link} eventKey="allproducts" to="">
-            <HomeOutlinedIcon fontSize="small" />
-            All Products
+            <MDBIcon fas icon="home" /> All Products
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="books" to="books">
-            <LibraryBooksOutlinedIcon fontSize="small" />
-            Books
+            <MDBIcon fas icon="book" /> Books
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="electronics" to="electronics">
-            <CameraAltOutlinedIcon fontSize="small" />
-            Electronics
+            <MDBIcon fas icon="camera" /> Electronics
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="fashion" to="fashion">
-            <AccessibilityIcon fontSize="small" />
-            Fashion
+            <MDBIcon fas icon="tshirt" /> Fashion
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="toysgames" to="toysgames">
-            <GamesOutlinedIcon fontSize="small" /> Toys & Games
+            <MDBIcon fas icon="gamepad" /> Toys & Games
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="grocery" to="grocery">
-            <LocalGroceryStoreOutlinedIcon fontSize="small" />
-            Grocery
+            <MDBIcon fas icon="utensils" /> Grocery
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="furniture" to="furniture">
-            <WeekendOutlinedIcon fontSize="small" />
-            Furniture
+            <MDBIcon fas icon="couch" /> Furniture
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="footwear" to="footwear">
-            <DirectionsRunIcon fontSize="small" />
-            Footwear
+            <MDBIcon fas icon="shoe-prints" /> Footwear
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={Link} eventKey="travel" to="travel">
-            <DirectionsCarFilledOutlinedIcon fontSize="small" />
-            Travel
+            <MDBIcon fas icon="plane-departure" /> Travel
           </Nav.Link>
         </Nav.Item>
       </Nav>
