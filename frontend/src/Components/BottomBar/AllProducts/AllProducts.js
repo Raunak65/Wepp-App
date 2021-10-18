@@ -1,13 +1,13 @@
 import React from 'react';
 import Carousel from './Carousel';
-import CardDisplay from "../Card/CardDisplay";  
+import CardDisplayAllProducts from "./CardAllProducts/CardDisplayAllProducts";  
 
 function AllProducts() {
     return (
       <div>
         <Carousel />
         <h1>All Products</h1>
-        <CardDisplay />
+        <CardDisplayAllProducts />
       </div>
     );
 }

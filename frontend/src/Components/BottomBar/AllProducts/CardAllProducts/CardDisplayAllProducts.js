@@ -1,5 +1,5 @@
 import React from "react";
-import CardData from "./CardData";
+import CardData from "./CardDataAllProducts";
 import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 const products = [
@@ -76,7 +76,7 @@ const products = [
   },
 ];
 
-const CardDisplay = () => {
+const CardDisplayAllProducts = () => {
   return (
     <MDBContainer>
       <MDBRow>
@@ -97,6 +97,6 @@ const CardDisplay = () => {
   );
 };
 
-export default CardDisplay;
+export default CardDisplayAllProducts;
 
 

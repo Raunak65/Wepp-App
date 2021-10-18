@@ -12,10 +12,7 @@ export default function App() {
           <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Footer Content</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              atque ea quis molestias. Fugiat pariatur maxime quis culpa
-              corporis vitae repudiandae aliquam voluptatem veniam, est atque
-              cumque eum delectus sint!
+              We Provide all kinds of products at a very reasonable price. The buyer also has the power to bargain the product. The customer can also return/exchange the product very easily within 7 days of arrival.
             </p>
           </MDBCol>
 

@@ -10,7 +10,10 @@ import {
 
 const CardData = ({ product }) => {
   return (
-    <MDBCard className="bg-image hover-zoom shadow-2-strong rounded" style={{marginBottom:'1.5rem'}}>
+    <MDBCard
+      className="bg-image hover-zoom shadow-2-strong rounded"
+      style={{ marginBottom: "1.5rem" }}
+    >
       <MDBCardImage
         height="200rem"
         src={product.image}
@@ -19,8 +22,9 @@ const CardData = ({ product }) => {
       />
       <MDBCardBody>
         <MDBCardTitle>{product.title}</MDBCardTitle>
-        <MDBCardText>{product.description}</MDBCardText>
-        <MDBCardLink href="#">I would Love to buy</MDBCardLink>
+        <MDBCardText>{product.price}</MDBCardText>
+        <MDBCardLink href="#">Add to Cart</MDBCardLink>
+        <MDBCardLink href="#">WishList</MDBCardLink>
       </MDBCardBody>
     </MDBCard>
   );

@@ -1,9 +1,10 @@
 import React from 'react';
+import CardDisplayBook from './CardDisplayBook';
 
 function Books() {
     return (
       <div>
-        <h1>This is electronics section.</h1>
+        <CardDisplayBook/>
       </div>
     );
 }
