@@ -10,7 +10,8 @@ const products = [
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://www.incimages.com/uploaded_files/image/1920x1080/getty_598063032_349381.jpg",
-    price: "$40",
+
+    destination: "books",
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const products = [
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "http://www.polytechnichub.com/wp-content/uploads/2017/04/Electronic.jpg",
-    price: "$30",
+    destination: "electronics",
   },
   {
     id: 3,
@@ -28,7 +29,7 @@ const products = [
       "Lizards are a  ranging across all continents except Antarctica.",
     image:
       "https://u4d2z7k9.rocketcdn.me/wp-content/uploads/2020/01/Webp.net-resizeimage-29-1024x683.jpg",
-    price: "$20",
+    destination: "fashion",
   },
   {
     id: 4,
@@ -37,7 +38,7 @@ const products = [
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://www.thehindubusinessline.com/news/yfeu1c/article33980306.ece/ALTERNATES/LANDSCAPE_1200/bl04Funskool",
-    price: "$10",
+    destination: "toysgames",
   },
   {
     id: 5,
@@ -46,7 +47,7 @@ const products = [
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://i.pinimg.com/736x/ae/e6/9d/aee69d611baea551d820fa80541dad2f.jpg",
-    price: "$140",
+    destination: "grocery",
   },
   {
     id: 6,
@@ -54,7 +55,7 @@ const products = [
     description:
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image: "https://www.woodenstreet.com/images/furniture/deal-1.jpg?v1",
-    price: "$130",
+    destination: "furniture",
   },
   {
     id: 7,
@@ -63,7 +64,7 @@ const products = [
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://www.compliancegate.com/wp-content/uploads/2020/01/shoes-footwear-regulations-us.jpg",
-    price: "$120",
+    destination: "footwear",
   },
   {
     id: 8,
@@ -72,7 +73,7 @@ const products = [
       "Lizards are a widespread group of squamate reptiles, with over 6,0species, ranging across all continents except Antarctica.",
     image:
       "https://thumbs.dreamstime.com/b/travel-world-landmarks-background-blue-sky-46083021.jpg",
-    price: "$110",
+    destination: "travel",
   },
 ];
 

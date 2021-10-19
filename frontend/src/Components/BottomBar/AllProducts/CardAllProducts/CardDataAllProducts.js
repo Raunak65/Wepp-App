@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import {
   MDBCard,
   MDBCardBody,
@@ -10,7 +11,10 @@ import {
 
 const CardDataAllProducts = ({ product }) => {
   return (
-    <MDBCard className="bg-image hover-zoom shadow-2-strong rounded" style={{marginBottom:'1.5rem'}}>
+    <MDBCard
+      className="bg-image hover-zoom shadow-2-strong rounded"
+      style={{ marginBottom: "1.5rem" }}
+    >
       <MDBCardImage
         height="200rem"
         src={product.image}
@@ -20,7 +24,9 @@ const CardDataAllProducts = ({ product }) => {
       <MDBCardBody>
         <MDBCardTitle>{product.title}</MDBCardTitle>
         <MDBCardText>{product.description}</MDBCardText>
-        <MDBCardLink href="#">I would Love to buy</MDBCardLink>
+        <Link to={product.destination} class="btn btn-primary stretched-link">
+          I love to buy {product.title}
+        </Link>
       </MDBCardBody>
     </MDBCard>
   );

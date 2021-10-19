@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles.css';
 import Carousel from './Carousel';
 import CardDisplayAllProducts from "./CardAllProducts/CardDisplayAllProducts";  
 
@@ -6,7 +7,9 @@ function AllProducts() {
     return (
       <div>
         <Carousel />
-        <h1>All Products</h1>
+        <div className="header-section">
+          <h2>All Products</h2>
+        </div>
         <CardDisplayAllProducts />
       </div>
     );

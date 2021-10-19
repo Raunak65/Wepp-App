@@ -1,15 +1,6 @@
 import React from "react";
 import { Nav} from "react-bootstrap";
 import { Link } from "react-router-dom";
-import GamesOutlinedIcon from "@mui/icons-material/GamesOutlined";
-import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
-import CameraAltOutlinedIcon from "@mui/icons-material/CameraAltOutlined";
-import WeekendOutlinedIcon from "@mui/icons-material/WeekendOutlined";
-import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
-import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import AccessibilityIcon from "@mui/icons-material/Accessibility";
-import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import { MDBIcon } from "mdb-react-ui-kit";
 
 export default function BottomBar() {

@@ -79,7 +79,6 @@ const products = [
 const CardDisplayBook = () => {
   return (
     <>
-      <h1>Books</h1>
       <MDBContainer>
         <MDBRow>
           {products.map((product) => (

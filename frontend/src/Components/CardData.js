@@ -6,6 +6,8 @@ import {
   MDBCardImage,
   MDBCardLink,
   MDBCardText,
+  MDBIcon,
+  MDBBtn,
 } from "mdb-react-ui-kit";
 
 const CardData = ({ product }) => {
@@ -15,6 +17,7 @@ const CardData = ({ product }) => {
       style={{ marginBottom: "1.5rem" }}
     >
       <MDBCardImage
+        to="https://google.com"
         height="200rem"
         src={product.image}
         position="top"
@@ -25,6 +28,7 @@ const CardData = ({ product }) => {
         <MDBCardText>{product.price}</MDBCardText>
         <MDBCardLink href="#">Add to Cart</MDBCardLink>
         <MDBCardLink href="#">WishList</MDBCardLink>
+        <MDBCardLink href="#">View</MDBCardLink>
       </MDBCardBody>
     </MDBCard>
   );
